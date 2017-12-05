@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
   "title": "SQLite 3.21.1",
-  "publisher": "G7CR Technologies India Pvt.Ltd",
+  "publisher": "G7CR Technologies India Pvt Ltd",
   "description": "Installs SQLite 3.21.1",
   "tags": [
     "SQLite 3.21.1"
