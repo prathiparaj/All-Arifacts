@@ -43,7 +43,7 @@ Param(
     # comma or semicolon separated list of chocolatey packages.
     [ValidateNotNullOrEmpty()]
     [string]
-    $RawPackagesList="sqlite"
+    $RawPackagesList="sqlite --version 3.20.1"
 )
 
 ##################################################################################################
