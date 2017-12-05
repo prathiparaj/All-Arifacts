@@ -10,6 +10,6 @@
  "iconUri": "https://mylibrary123.blob.core.windows.net/reposit/G7.png",
   "targetOsType": "Windows",
   "runCommand": {
-    "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File SQLite3-20-1.ps1"
+    "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File SQLite3201.ps1"
   }
 }
