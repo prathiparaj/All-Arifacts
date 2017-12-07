@@ -43,7 +43,7 @@ Param(
     # comma or semicolon separated list of chocolatey packages.
     [ValidateNotNullOrEmpty()]
     [string]
-    $RawPackagesList="sqlite --version 3.12.1"
+    $RawPackagesList="sqlite"
 )
 
 ##################################################################################################
@@ -223,7 +223,7 @@ function InstallPackages
         WriteLog "Installing package: $package ..."
 
         # Install git via chocolatey.
-        choco install $package --force --yes --acceptlicense --verbose --allow-empty-checksums | Out-Null  
+        choco install $package --version 3.12.1 --force --yes --acceptlicense --verbose --allow-empty-checksums | Out-Null  
         if (-not $?)
         {
             $errMsg = 'Installation failed. Please see the chocolatey logs in %ALLUSERSPROFILE%\chocolatey\logs folder for details.'
