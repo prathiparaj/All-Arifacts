@@ -56,8 +56,11 @@ Add-Type -assembly "system.io.compression.filesystem"
 
 
 cd "C:\mysql-5.7.20-winx64\bin"
-.\mysqld.exe --initialize
-.\mysqld.exe
+
+$env:Path += ";C:\mysql-5.7.20-winx64\bin"
+
+mysqld --initialize
+mysqld
 #& cmd /c  'mysqld --initialize' 
 #& cmd /c  'mysqld'
 
