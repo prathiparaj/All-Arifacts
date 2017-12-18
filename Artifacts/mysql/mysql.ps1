@@ -57,10 +57,19 @@ Add-Type -assembly "system.io.compression.filesystem"
 
 cd "C:\mysql-5.7.20-winx64\bin"
 
-$env:Path += ";C:\mysql-5.7.20-winx64\bin"
+if((Test-Path "$setupFolder\sql.bat") -eq $false)
+{
+  
+        Download-File "https://mylibrary123.blob.core.windows.net/reposit/sql.bat" "$setupFolder\sql.bat"  
+}
 
-mysqld --initialize
-mysqld
+
+Start-Process -FilePath $setupFolder\sql.bat -WorkingDirectory C:\mysql-5.7.20-winx64\bin\"
+
+#$env:Path += ";C:\mysql-5.7.20-winx64\bin"
+
+#mysqld --initialize
+#mysqld
 #& cmd /c  'mysqld --initialize' 
 #& cmd /c  'mysqld'
 
