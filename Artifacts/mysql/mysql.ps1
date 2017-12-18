@@ -55,7 +55,6 @@ Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::ExtractToDirectory($BackUpPath, $destination)
 
 
-cd "C:\mysql-5.7.20-winx64\bin"
 
 if((Test-Path "$setupFolder\sql.bat") -eq $false)
 {
@@ -64,7 +63,7 @@ if((Test-Path "$setupFolder\sql.bat") -eq $false)
 }
 
 
-Start-Process -FilePath $setupFolder\sql.bat -WorkingDirectory C:\mysql-5.7.20-winx64\"
+Start-Process -FilePath $setupFolder\sql.bat
 
 #$env:Path += ";C:\mysql-5.7.20-winx64\bin"
 
