@@ -64,7 +64,7 @@ if((Test-Path "$setupFolder\sql.bat") -eq $false)
 }
 
 
-Start-Process -FilePath $setupFolder\sql.bat -WorkingDirectory C:\mysql-5.7.20-winx64\bin\"
+Start-Process -FilePath $setupFolder\sql.bat -WorkingDirectory C:\mysql-5.7.20-winx64\"
 
 #$env:Path += ";C:\mysql-5.7.20-winx64\bin"
 
