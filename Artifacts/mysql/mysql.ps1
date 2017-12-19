@@ -46,12 +46,12 @@ if((Test-Path "$setupFolder\sql.bat") -eq $false)
 if((Test-Path "$setupFolder\vcredist_x64.exe") -eq $false)
 {
   
-        Download-File "https://mylibrary123.blob.core.windows.net/reposit/sql.bat" "$setupFolder\sql.bat"  
+        Download-File "https://mylibrary123.blob.core.windows.net/reposit/vcredist_x64.exe" "$setupFolder\vcredist_x64.exe"  
 }
 
+Start-Process -FilePath “$setupFolder\vcredist_x64.exe” -ArgumentList “/passive” -Wait -Passthru
+
    
-
-
 
 Add-Type -assembly "system.io.compression.filesystem"
 
