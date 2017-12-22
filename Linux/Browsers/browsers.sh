@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Installing NodeJs"
+echo "Installing Browsers"
 
 isApt=`command -v apt-get`
 isYum=`command -v yum`
@@ -32,7 +32,7 @@ elif [ -n "$isYum" ] ; then
     sudo yum clean all
 	
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-    sudo yum install ./google-chrome-stable_current_*.rpm
+    	sudo yum install ./google-chrome-stable_current_*.rpm
 	sudo yum install firefox
     exit 0
 fi
