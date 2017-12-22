@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+  "title": "JDK8",
+  "description": "Installs JDK8",
+  "tags": [
+    "Windows",
+    "JDK8"
+     ],
+	"iconUri": "https://globalartifactstg.blob.core.windows.net/globalsoftwarelink4artifact/G7.png", 
+  "targetOsType": "Windows",
+  "runCommand": {
+    "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File jdk8.ps1"
+  }
+}

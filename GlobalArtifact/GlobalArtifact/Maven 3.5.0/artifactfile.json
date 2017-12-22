@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "download Maven 3.5.0",
+    "publisher": "G7CR Technologies India Pvt.Ltd",
+    "description": "Maven 3.5.0",
+    "tags": [
+        "Maven"
+    ],
+     "iconUri": "https://mylibrary123.blob.core.windows.net/reposit/G7.png",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File install.ps1"
+    }
+}

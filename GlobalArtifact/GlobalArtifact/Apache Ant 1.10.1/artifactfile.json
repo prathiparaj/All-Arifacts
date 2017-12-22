@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Apache Ant 1.10.1",
+    "publisher": "G7CR Technologies India Pvt.Ltd",
+    "description": "install Apache Ant 1.10.1",
+    "tags": [
+        "Windows",
+        "Apache",
+        "Ant"
+    ],
+     "iconUri": "https://globalartifactstg.blob.core.windows.net/globalsoftwarelink4artifact/G7.png",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File install.ps1"
+    }
+}

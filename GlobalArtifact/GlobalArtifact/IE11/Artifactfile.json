@@ -1,0 +1,14 @@
+{ 
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-1128/dtlArtifacts.json", 
+  "title": "Internet Explorer", 
+  "description": "Installs Internet Explorer", 
+  "tags": [ 
+    "Windows", 
+    "Internet explorer" 
+     ], 
+	 "iconUri": "https://globalartifactstg.blob.core.windows.net/globalsoftwarelink4artifact/G7.png",
+  "targetOsType": "Windows", 
+  "runCommand": { 
+    "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File ie11.ps1" 
+  } 
+} 
