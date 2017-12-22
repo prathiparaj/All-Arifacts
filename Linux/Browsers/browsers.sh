@@ -16,7 +16,7 @@ if [ -n "$isApt" ] ; then
 	
 	sudo apt-get install libxss1 libappindicator1 libindicator7 -y
 	wget https://mylibrary123.blob.core.windows.net/reposit/google-chrome-stable_current_amd64.deb
-	sudo dpkg -i google-chrome*.deb -y
+	sudo dpkg -i google-chrome*.deb
 	sudo apt install firefox -y
 	sudo apt-get install wine cabextract -y
 	wget https://mylibrary123.blob.core.windows.net/reposit/ies4linux-latest.tar.tar
