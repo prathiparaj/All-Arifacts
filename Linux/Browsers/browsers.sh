@@ -19,7 +19,7 @@ if [ -n "$isApt" ] ; then
 	sudo dpkg -i google-chrome*.deb
 	sudo apt install firefox -y
 	sudo apt-get install wine cabextract -y
-	wget https://mylibrary123.blob.core.windows.net/reposit/ies4linux-latest.tar.tar
+	wget https://mylibrary123.blob.core.windows.net/reposit/ies4linux.tar
 	tar zxvf ies4linux-latest.tar.gz
 	cd ies4linux-*
 	./ies4linux -y
